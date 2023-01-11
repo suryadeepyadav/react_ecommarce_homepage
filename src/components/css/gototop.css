@@ -1,0 +1,23 @@
+.top-btn {
+font-size: 2.4rem;
+width: 3rem;
+    height: 3rem;
+    color:gray;
+    /* border-radius: 50%; */
+    border : 1px solid gray;
+    /* background-color: black; */
+    background-color: #212121;
+    position: fixed;
+    bottom: 1rem;
+    right: .1rem;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+.top-btn:hover {
+    
+    background-color:#e8541e;
+    cursor: pointer;
+    /* border-color: white; */
+}

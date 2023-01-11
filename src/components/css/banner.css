@@ -1,0 +1,198 @@
+.mainbanner{
+    display: flex;
+    /* justify-content: space-between; */
+    /* flex-wrap: wrap; */
+    /* border: 1px solid black; */
+    width: 100%;
+    margin-top: 2.5em;
+    gap: 0 1.3em;
+    max-width: 100%;
+  
+}
+.bannerhav1{
+    width: 100%;
+    /* border: 1px solid red; */
+    position: relative;
+}
+.bannerhav1::before , .bannerhav1::after{
+    content: "";
+    position: absolute;
+    width:0;
+    height:0;
+    opacity: 0;
+    z-index: 1;
+    transition: all 0.2s ease-in-out;
+}
+.bannerhav1::before{
+    bottom: 4.3%;
+    left: 4.9%;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+}
+.bannerhav1::after{
+    top: 5%;
+    right: 5%;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+}
+.bannerhav1:hover::before , .bannerhav1:hover::after{
+    width: 90%;
+    height: 90%;
+    opacity: 1;
+}
+
+.mainbanner .bimage{
+    width: 100%;
+    /* animation: myAnim 1s ease 0s 1 normal forwards;  */
+    /* border: 1px solid red; */
+    transition: all 0.2s ease-in-out;
+
+}
+.mainbanner .bimage:hover {
+    width:100%;
+    /* height:100%; */
+    filter: brightness(50%);
+    /*  :absolute; */
+    /* background-color:#000; */
+    /* opacity:0.5; */
+     /* -webkit-filter: invert(1); */
+    /* filter: invert(1); */
+        
+}
+.banner2{
+    width: 100%;
+    /* border: 1px solid red; */
+    margin-top: 4.2rem;
+    max-width: 100%;
+}
+.bannerhav{
+    width: 100%;
+    position: relative;
+}
+.bannerhav::before, .bannerhav::after{
+    content: "";
+    position: absolute;
+    width:0;
+    height:0;
+    opacity: 0;
+    z-index: 1;
+    transition: all 0.2s ease-in;
+}
+.bannerhav::before{
+    bottom: 4.5%;
+    left: 4.9%;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    
+}
+.bannerhav::after{
+    top: 5%;
+    right: 5%;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+}
+.bannerhav:hover::before, .bannerhav:hover::after{
+    width: 90%;
+    height: 90%;
+    opacity: 1;
+    transition: all 0.2s ease-in-out;
+}
+
+.bimage2{
+    width: 100%;
+    transition: all 0.2s ease-in-out;
+
+    /* border: 1px solid red; */
+}
+.bimage2:hover{
+    width: 100%;
+    filter: brightness(50%);
+    /* border: 1px solid white; */
+    /* border-top: -3em; */
+
+}
+.banner3{
+    width: 100%;
+    /* border: 1px solid red; */
+    margin-top: 3.4rem;
+    display: flex;
+    gap: 0 .9em;
+    justify-content: space-evenly;
+    /* justify-content: space-around; */
+    /* margin-left: 2em; */
+    /* margin-right: 2em; */
+    max-width: 100%;
+}
+.bannerhav3{
+    width: 45.6%;
+    position: relative;
+    /* border: 1px solid darkgreen; */
+    /* right: 1em;
+    left: 1em; */
+}
+.bannerhav3::before, .bannerhav3::after{
+    content: "";
+    position: absolute;
+    width:0;
+    height:0;
+    opacity: 0;
+    z-index: 1;
+    transition: all 0.2s ease-in;
+}
+.bannerhav3::before{
+    bottom: 4.5%;
+    left: 4.9%;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    
+}   
+.bannerhav3::after{
+    top: 5%;
+    right: 5%;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+}
+.bannerhav3:hover::before, .bannerhav3:hover::after{
+    width: 90%;
+    height: 90%;
+    opacity: 1;
+    transition: all 0.2s ease-in-out;
+}
+.bannerhav3 img{
+    width: 100%;
+    transition: all 0.2s ease-in-out;
+    /* gap : 0 1em; */
+    /* margin-left: -1em; */
+    /* border: 1px solid rgb(255, 0, 200); */
+}
+.bannerhav3 img:hover{
+    width: 100%;
+    filter: brightness(50%);
+}
+/* #b3img1{ */
+    /* margin-left: 4em; */
+/* } */
+/* #b3img2{ */
+    /* margin-right: 4em; */
+/* } */
+
+.banner7{
+    width:calc(100% - 6em);
+    /* border: 1px solid red; */
+    /* height:12em; */
+    margin-top: 3.6rem;
+    /* margin-left: 5em; */
+    max-width: 100%;
+    margin-left: 3em;
+    margin-right: 3.5em;
+    
+}
+.bimage7{
+    width: 100%;
+    transition: all 0.2s ease-in-out;
+    /* border: 1px solid red; */
+}
+.bimage7:hover{
+    width: 100%;
+    filter: brightness(50%);
+}

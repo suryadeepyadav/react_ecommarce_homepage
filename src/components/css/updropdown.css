@@ -1,0 +1,67 @@
+.services-upsubmenu {
+    width: 6.7rem;
+    height: 7rem;
+    position: absolute;
+    top: 15px;
+    
+    list-style: none;
+    text-align: start;
+    z-index: 1000;
+    /* border:  1px solid red; */
+    /* height: 10rem; */
+    color: gray !important;
+    background-color: #fff;
+    /* border-radius: .51em; */
+    margin-left: .2em;
+    margin-right: -1em;
+    padding-left: 1.7em;
+    margin-top: 2.6em;
+    box-shadow: 2px 2px 5px 1px grey;
+    
+  }
+  
+  .services-upsubmenu li {
+    /* background: rgb(0, 212, 212); */
+    cursor: pointer;
+     color:'#545454';
+    /* border:  1px solid blue; */
+    width: calc(100%-1px);
+    /* margin-left: -.4em; */
+    /* margin-bottom: 1.2em; */
+    margin-top: 1em;
+    /* margin: -.51em 0; */
+    /* padding-bottom: -4em !important; */
+  }
+  .services-upsubmenu li link{
+    color: #545454;
+  }
+    .services-upsubmenu li:hover {
+        /* background: #e8541e; */
+        color: #fff;
+    }
+  
+  .services-upsubmenu li link:hover {
+    /* background: rgb(0, 175, 175); */
+    color:#e8541e;
+  }
+  
+  .services-upsubmenu.clicked {
+    display: none;
+  }
+  
+  .upsubmenu-item {
+    display: inline;
+    width: 100%;
+    /* height: 100%; */
+    text-decoration: none;
+    color:gray;
+    /* padding: 2px 0; */
+    margin: 1.5em 0;     
+    font-size: .91em;
+    transition: all 0.3s ease-in-out;
+  }
+  .upsubmenu-item:hover {
+    color: #e8541e;
+    height: 100%;
+  }
+  

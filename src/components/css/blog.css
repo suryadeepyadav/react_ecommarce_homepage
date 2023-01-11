@@ -1,0 +1,102 @@
+.mainblog{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* border: 1px solid brown; */
+    /* width: 90%; */
+    width: calc(100% -5em - 1px);
+    /* margin-left: 5em; */
+    margin-top: 2em;
+    /* gap : 0 -16em; */
+    /* padding-left: clamp(1em, 1vw, 5em);
+    padding-right: clamp(1em, 1vw, 5em); */
+    max-width: 100%;
+}
+.blogs{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: .6em 0;
+    /* border: 1px solid red; */
+    width: clamp(min(10vw, 10em), 23em, max(90vw, 25em));
+    flex-shrink: 8;
+    /* margin-left: 3em; */
+    max-width: 100%;
+}
+.blogimage{
+    width: 100%;
+    position: relative
+}
+.blogimage:hover{
+    filter: brightness(50%);
+}
+.blogimage::before, .blogimage::after{
+    content: "";
+    position: absolute;
+    width:0;
+    height:0;
+    opacity: 0;
+    z-index: 1;
+    transition: all 0.2s ease-in;
+}
+.blogimage::before{
+    bottom: 4.5%;
+    left: 4.9%;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    
+}
+.blogimage::after{
+    top: 5%;
+    right: 5%;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+}
+.blogimage:hover::before, .blogimage:hover::after{
+    width: 90%;
+    height: 90%;
+    opacity: 1;
+    transition: all 0.2s ease-in-out;
+    filter: brightness(100%);
+    
+}
+
+.blogs img{
+    /* width: calc(23em + 1vw); */
+    /* width: clamp(min(10vw, 10em), 23em, max(90vw, 22em)); */
+    width: 100%;
+    height: 13em;
+    /* border: 1px solid rgb(255, 0, 174); */
+    padding:0 -5em;
+    flex-shrink: 5;
+    transition: all 0.2s ease-in-out;
+    overflow: hidden;
+}
+.blogs img:hover{
+    filter: brightness(50%);
+}
+.blogs p{
+    color: rgba(77, 73, 73, 0.912);
+    font-size: .9em;
+    
+}
+#cblog{
+margin-top: .75em;
+}
+.blogs h4{
+    color: rgb(28, 28, 28);
+    font-size: calc(.1em + 1vw);
+    margin-bottom: .41em;
+}
+.blogs button{
+    width: 8em;
+    /* height: 2.9em; */
+    /* border-radius: 20px; */
+    background-color: transparent;
+    border: none;
+    /* padding-left: 0; */
+    margin-left: -1.5em;
+    margin-top: .31em;
+    color:#e8541e;
+}

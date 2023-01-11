@@ -1,0 +1,47 @@
+.mainflogo{
+    width: 98%;
+    /* margin:5em 1em; */
+    margin-top: 3.3em;
+    margin-left:1em;
+    margin-bottom: 1.4em;
+    padding: 0 3em;
+    padding-left: 3em;
+    max-width: 100%;
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* border: 1px solid red; */
+}
+.flogo{
+    height: 3em;
+    width: 1em;
+    /* border: 1px solid green; */
+    margin-left: 3.4em;
+}
+.flogo img{
+    height: 100%;
+    width: 40%;
+    /* border: 1px solid blue; */
+    /* color: rgba(207, 201, 201, 0.403); */
+    color: rgb(236, 232, 232);
+}
+.flogo img:hover{
+    cursor: pointer;
+    /* filter: brightness(50%); */
+    /* color: rgb(130, 37, 37); */
+    /* color: rgb(105, 101, 101); */
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .mainflogo{
+        padding: 0 1em;
+        padding-left: 1em;
+        margin: 1em 0;
+    }
+    .flogo{
+        margin-left: 1.4em;
+    }
+    .flogo img{
+        width: 50%;
+    }
+}
